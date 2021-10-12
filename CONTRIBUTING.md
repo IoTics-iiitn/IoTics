@@ -26,15 +26,23 @@ npm install
 ```sh
 git checkout -b <branch-name> # Create a new branch and check it out
 ```
-4. Commit your Changes
+4. Add your changes once the work is done
+```sh
+git add .
+```
+5. See your staged changes
+```sh
+git status
+```
+6. Commit your Changes
 ```sh
 git commit -m <write commit message inside quotes>
 ```
-5. Push to the Branch 
+7. Push to the Branch 
 ```sh
 git push -u origin <branch-name>
 ```
-6. Open a Pull Request
+8. Open a Pull Request
 
 ### Important ❗
 Before working on any existing branch always run this command to keep things updated.
