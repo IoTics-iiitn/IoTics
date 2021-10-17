@@ -1,1 +1,37 @@
-/* test */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-container {
+  position: relative;
+  top: -52px;
+  left: 0;
+}
+
+.bg {
+  max-width: 100%;
+  z-index: -10;
+}
+
+.hero-text {
+  position: relative;
+  top: -550px;
+  left: 170px;
+  color: #ff577e;
+  font-family: "Raleway", sans-serif;
+  height: 300px;
+  width: 300px;
+  line-height: 60px;
+  font-size: 1.5rem;
+}
+
+.head-logo {
+  position: relative;
+  top: -675px;
+  left: 100px;
+  width: 250px;
+}

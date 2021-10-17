@@ -1,1 +1,65 @@
-/* test */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.nav-container {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-container a {
+  text-decoration: none;
+}
+
+.active {
+  color: #ff697e;
+}
+
+.unselected {
+  color: #4564bf;
+}
+
+.home {
+  margin: 0 75px 0 0;
+}
+
+.about {
+  margin: 0 150px 0 0;
+}
+.nav-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  font-family: "Work Sans", sans-serif;
+  color: #4564bf;
+}
+
+.logo {
+  width: 140px;
+  margin: 10px 0 12px 62px;
+  visibility: hidden;
+}
+
+/*On  Scrollll */
+.nav-container.scroll {
+  background-color: #f5f5f5;
+  box-shadow: 0px 14px 7px 0px #0000000f;
+  position: fixed;
+}
+
+.logo.scroll-logo {
+  width: 140px;
+  margin: 10px 0 12px 62px;
+  visibility: visible;
+}
