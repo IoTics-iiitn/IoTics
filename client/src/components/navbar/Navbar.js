@@ -30,7 +30,7 @@ const Navbar = () => {
                         <h1>Home</h1>
                     </div>
                 </NavLink>
-                <NavLink to="/about-us" className={isActive => "active" + (!isActive ? " unselected" : "")}>
+                <NavLink to="/about" className={isActive => "active" + (!isActive ? " unselected" : "")}>
                     <div className="about">
                         <h1>About Us</h1>
                     </div>
