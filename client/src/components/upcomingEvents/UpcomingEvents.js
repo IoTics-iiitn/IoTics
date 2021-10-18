@@ -1,6 +1,6 @@
 import React from 'react'
 import "./UpcomingEvents.css"
-import logoo from './assets/Asset 9.png'
+import logooo from './assests/Asset 9.png'
 const UpcomingEvents = () => {
     return (
         <div>
@@ -12,7 +12,7 @@ const UpcomingEvents = () => {
                  <div className="container">Events</div>
                  </div>
                  <div className="img-i">
-                 <img className='logo2' src={logoo} alt=""/>
+                 <img className='logo2' src={logooo} alt=""/>
                  </div>
             
         </div>

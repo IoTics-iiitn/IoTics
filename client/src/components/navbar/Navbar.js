@@ -1,17 +1,3 @@
-<<<<<<< Updated upstream
-import React from 'react'
-import "./Navbar.css"
-
-const Navbar = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
-
-export default Navbar
-=======
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
@@ -55,4 +41,3 @@ const Navbar = () => {
 }
 
 export default Navbar
->>>>>>> Stashed changes

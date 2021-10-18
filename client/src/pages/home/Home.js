@@ -1,16 +1,3 @@
-<<<<<<< Updated upstream
-import React from 'react'
-
-const Home = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
-
-export default Home
-=======
 import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Hero from '../../components/hero/Hero'
@@ -22,7 +9,7 @@ const Home = () => {
     return (
         <div>
             <Hero />
-            <UpcomingEvents/>
+            {/* <UpcomingEvents/> */}
             <Router>
                 <Navbar />
                 <Switch>
@@ -35,4 +22,3 @@ const Home = () => {
 }
 
 export default Home
->>>>>>> Stashed changes
