@@ -37,7 +37,7 @@
     width: 295px;
     height: 54px;
     left: 868px;
-    top: 1971px;
+    top: 1979px;
     color: aliceblue;
     font-size: 28px;
     
@@ -48,13 +48,13 @@
     cursor: pointer;
   }
   .textaboutt{
-    top: 1800px;
+    top: 1810px;
     left: 170px;
     position: absolute;
     font-family: Raleway;
 font-style: normal;
 font-weight: normal;
-font-size: 32px;
+font-size: 28px;
 line-height: 36px;
 
 color: #000000;
@@ -64,4 +64,53 @@ height: 136px;
 opacity: 0.8;
      
       
+  }
+
+  @media screen and (max-width: 400px){
+
+    .textAbout {
+      position: absolute;
+width: 322px;
+height: 44px;
+left: 47px;
+top: 796px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 35px;
+
+color: #4564BF;
+    }
+    .textaboutt{
+      width: 288px;
+height: 444px;
+left: 47px;
+top: 860px;
+
+font-family: Roboto Slab;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 26px;
+
+color: #000000;
+
+opacity: 0.8;
+        
+    }
+    .aboutbtn{
+      position: absolute;
+width: 288px;
+height: 53px;
+left: 47px;
+top: 1120px;
+
+background: #FF697E;
+box-shadow: 4px 6px 8px rgba(255, 105, 126, 0.49);
+ border-radius: 5px;
+      cursor: pointer;
+    }
+
   }

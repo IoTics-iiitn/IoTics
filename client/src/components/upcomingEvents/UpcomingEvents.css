@@ -51,6 +51,38 @@
     width: 449px;
     height: 406px;
     left: 1337px;
-    top: 1423px;
-    top: -266px;
+   
+    top: -306px;
+  }
+
+  @media screen and (max-width: 400px){
+    .img-i{
+      display: none;
+    }
+    .container{
+      position: absolute;
+   width: 288px;
+  height: 362px;
+ left: 45px;
+     top: -286px;
+
+background: #C4C4C4;
+    }
+
+    .text1{
+      position: absolute;
+width: 322px;
+height: 44px;
+left: 36px;
+top: -346px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 35px;
+
+color: #4564BF;
+
+    }
   }
