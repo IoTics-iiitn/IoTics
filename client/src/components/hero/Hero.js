@@ -11,7 +11,7 @@ const Hero = () => {
     return (
         <div className='hero-container'>
             <img className='bg' src={bg} alt="" />
-            <img className='head-logo' src={logo} alt=""/>
+            <img className='head-logo' src={logo} alt="" />
             <div className="hero-text">
                 <h1>Streamlining Your Iot Needs</h1>
             </div>
