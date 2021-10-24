@@ -1,0 +1,35 @@
+.toast {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  letter-spacing: 1px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+.toast-heading h1 {
+  color: #000000;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  line-height: 2.5rem;
+}
+
+.toast-heading h2 {
+  color: #ff577e;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+.toast-image img {
+  width: 318px;
+  height: 295px;
+}
+
+@media screen and (max-width: 500px) {
+  .toast-image img {
+    width: 290px;
+    height: 270px;
+  }
+}

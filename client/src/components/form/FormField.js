@@ -1,16 +1,15 @@
 import React from 'react'
+import "./Form.css"
 
 const FormField = (props) => {
 
-    const {fieldName, inputType} = props;
+    const {fieldName, inputType, onChange, value, maxLength, title, pattern, style} = props;
 
     return (
         <div className="form-field">
-          <div className="field-name">
-              <h3>{fieldName}</h3>
-          </div>
           <div className="field-input">
-              <input type={inputType} />
+              <label htmlFor={fieldName}>{fieldName}</label>
+              <input style={style} title={title}  id={fieldName} value={value} onChange={onChange} type={inputType} maxLength={maxLength} pattern={pattern} required/>
           </div>
         </div>
     );
