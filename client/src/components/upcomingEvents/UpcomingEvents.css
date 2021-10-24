@@ -1,1 +1,88 @@
 /* test */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .upcoming-container{
+      top:40px;
+      left: 0px;
+      position: relative;
+  }
+  .text1{
+    position: absolute;
+   
+    left: 170px;
+    top: -396px;
+    
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    
+    line-height: 75px;
+    height: 350px;
+   width: 500px;
+   line-height: 60px;
+   font-size: 3.2rem;
+   font-weight: normal;
+    
+    color: #4564BF;
+    
+  }
+  .container{
+    position: absolute;
+    height:426px;
+    width: 1018px;
+    left: 104px;
+    top: 1418px;
+    left: 170px;
+    top: -286px;
+    border: 1px solid none;
+    border-radius: 6px;
+    
+    background: #C4C4C4;
+  } 
+
+  .img-i img{
+    position: absolute;
+    width: 449px;
+    height: 406px;
+    left: 1337px;
+   
+    top: -306px;
+  }
+
+  @media screen and (max-width: 400px){
+    .img-i{
+      display: none;
+    }
+    .container{
+      position: absolute;
+   width: 288px;
+  height: 362px;
+ left: 45px;
+     top: -286px;
+
+background: #C4C4C4;
+    }
+
+    .text1{
+      position: absolute;
+width: 322px;
+height: 44px;
+left: 36px;
+top: -346px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 35px;
+
+color: #4564BF;
+
+    }
+  }
