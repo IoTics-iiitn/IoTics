@@ -1,1 +1,73 @@
-/* test */
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.about-us-container .heading {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  margin-bottom: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.about-us-container .heading h1 {
+  color: #4564bf;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.about-para p{
+  font-size: larger;
+  line-height: 1.5rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.about-para{
+  margin-bottom: 2rem;
+}
+
+.about-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-btn button{
+  background: #FF697E;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 1rem;
+  color: white;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width:1100px) {
+  .about-us{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .about-us{
+    width: 100%;
+  }
+  .about-us-container .heading{
+    width: 90%;
+  }
+}
