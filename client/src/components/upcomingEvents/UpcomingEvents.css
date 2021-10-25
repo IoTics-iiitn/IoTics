@@ -1,88 +1,88 @@
-/* test */
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+.upcoming-events-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.upcoming-events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.upcoming-events-container .heading {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  margin-bottom: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.upcoming-events-container .heading h1 {
+  color: #4564bf;
+}
+
+.upcoming-events-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.upcoming-events-image-details {
+  background: #c4c4c4;
+  width: 60%;
+  height: auto;
+  min-height: 380px;
+}
+
+.upcoming-events-robot {
+  width: 35%;
+}
+
+.upcoming-events-robot img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 340px;
+}
+
+@media screen and (max-width: 1100px) {
+  .upcoming-events-content {
+    width: 100%;
   }
-
-  .upcoming-container{
-      top:40px;
-      left: 0px;
-      position: relative;
+  .upcoming-events-container .heading {
+    width: 100%;
   }
-  .text1{
-    position: absolute;
-   
-    left: 170px;
-    top: -396px;
-    
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    
-    line-height: 75px;
-    height: 350px;
-   width: 500px;
-   line-height: 60px;
-   font-size: 3.2rem;
-   font-weight: normal;
-    
-    color: #4564BF;
-    
+  .upcoming-events-image-details {
+    min-height: 300px;
   }
-  .container{
-    position: absolute;
-    height:426px;
-    width: 1018px;
-    left: 104px;
-    top: 1418px;
-    left: 170px;
-    top: -286px;
-    border: 1px solid none;
-    border-radius: 6px;
-    
-    background: #C4C4C4;
-  } 
+}
 
-  .img-i img{
-    position: absolute;
-    width: 449px;
-    height: 406px;
-    left: 1337px;
-   
-    top: -306px;
+@media screen and (max-width:1100px) {
+  .upcoming-events{
+    width: 95%;
   }
+}
 
-  @media screen and (max-width: 400px){
-    .img-i{
-      display: none;
-    }
-    .container{
-      position: absolute;
-   width: 288px;
-  height: 362px;
- left: 45px;
-     top: -286px;
-
-background: #C4C4C4;
-    }
-
-    .text1{
-      position: absolute;
-width: 322px;
-height: 44px;
-left: 36px;
-top: -346px;
-
-font-family: Raleway;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 35px;
-
-color: #4564BF;
-
-    }
+@media screen and (max-width: 600px) {
+  .upcoming-events {
+    width: 100%;
   }
+  .upcoming-events-content {
+    flex-direction: column;
+  }
+  .upcoming-events-container .heading {
+    font-size: 0.9rem;
+    width: 90%;
+  }
+  .upcoming-events-image-details {
+    width: 90%;
+  }
+  .upcoming-events-robot img {
+    display: none;
+  }
+}

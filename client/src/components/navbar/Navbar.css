@@ -10,6 +10,7 @@
   padding: 5px;
   min-height: 70px;
   z-index: 10000;
+  width: 100vw;
 }
 
 .is-distinct {
@@ -40,7 +41,7 @@
   margin: 0 1rem;
   font-size: larger;
   font-family: "Work Sans", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -72,7 +73,6 @@
     width: 100vw;
     transform: translate(0,-115%);
     transition: all 0.5s ease;
-    z-index: -100;
   }
   .hide{
     transform: translate(0);

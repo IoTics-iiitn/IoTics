@@ -10,12 +10,13 @@
   align-items: center;
   margin: 3rem 0;
   letter-spacing: 1px;
+  margin-bottom: 2rem;
 }
 
 .form-container form {
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 72%;
   background: rgba(229, 229, 229, 0.52);
   padding: 1rem 2rem;
   border-radius: 8px;
@@ -49,7 +50,7 @@
 
 .form-field {
   display: flex;
-  margin: 0.8rem 0;
+  margin: 1rem 0;
   width: 100%;
   justify-content: space-between;
   height: 100%;
@@ -71,8 +72,8 @@
   border-radius: 4px;
   font-family: "Work Sans", sans-serif;
   font-size: 1rem;
-  width: 60%;
-  z-index: 100;
+  width: 65%;
+  z-index: 10;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -89,7 +90,7 @@ input[type="number"] {
 
 .field-input label {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 
@@ -135,6 +136,7 @@ input:focus {
   letter-spacing: 1px;
   font-size: 1.2rem;
   transition: all 0.5s ease;
+  line-height: 1.6rem;
 }
 
 /* 
@@ -143,22 +145,22 @@ toast container
 =================
 */
 
-.toast-container{
-    position: fixed;
-    top: 0;
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 0.25);
-    width: 100%;
-    z-index: 1000;
-    overflow:hidden;
-    transform: scale(0);
-    transition: all 0.5s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.toast-container {
+  position: fixed;
+  top: 0;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.25);
+  width: 100%;
+  z-index: 1000;
+  overflow: hidden;
+  transform: scale(0);
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.toast-close-container{
+.toast-close-container {
   display: flex;
   justify-content: center;
   padding: 1rem;
@@ -168,7 +170,7 @@ toast container
   position: relative;
 }
 
-.toast-close{
+.toast-close {
   position: absolute;
   top: 0;
   right: 0;
@@ -178,6 +180,17 @@ toast container
   transition: all 1s ease;
   cursor: pointer;
   padding: 0 5px;
+}
+
+@media screen and (min-width: 1250px) {
+  .form-image img {
+    z-index: 1;
+    height: 100%;
+    transform: scale(0.9);
+  }
+  .form-image svg {
+    transform: scale(1.4);
+  }
 }
 
 @media screen and (max-width: 1350px) {
@@ -199,42 +212,47 @@ toast container
   .form-image {
     display: none;
   }
-  .form-content{
+  .form-content {
     justify-content: center;
   }
-  .form-fields{
+  .form-fields {
     width: 100%;
     justify-content: center;
     align-items: center;
   }
-  .form-field{
+  .form-field {
     justify-content: center;
     width: 90%;
   }
   .field-input {
     flex-direction: column;
   }
-  .field-input label{
+  .field-input label {
     margin-bottom: 1rem;
   }
-  .toast-close-container{
-  width: 95%;
-}
-.toast-close{
-  transform: translate(0,-100%);
-}
+  .toast-close-container {
+    width: 95%;
+  }
+  .toast-close {
+    transform: translate(0, -100%);
+  }
 }
 
-
-
-@media screen and (max-width: 500px){
-  .field-input input{
+@media screen and (max-width: 500px) {
+  .form-container form {
+    width: 90%;
+  }
+  .field-input input {
     width: 95%;
   }
   .field-input {
     align-items: flex-start;
   }
-  .field-input label{
+  .field-input label {
     width: 100%;
+  }
+  .form-heading {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
   }
 }

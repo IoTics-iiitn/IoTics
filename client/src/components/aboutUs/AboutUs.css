@@ -1,116 +1,73 @@
-/* test */
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.about-us-container .heading {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  margin-bottom: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.about-us-container .heading h1 {
+  color: #4564bf;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.about-para p{
+  font-size: larger;
+  line-height: 1.5rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.about-para{
+  margin-bottom: 2rem;
+}
+
+.about-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-btn button{
+  background: #FF697E;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 1rem;
+  color: white;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width:1100px) {
+  .about-us{
+    width: 100%;
   }
+}
 
-  .about-container{
-      top:40px;
-      left: 0px;
-      position: relative;
+@media screen and (max-width:600px) {
+  .about-us{
+    width: 100%;
   }
-  .textAbout {
-    position: absolute;
-   
-    left: 170px;
-    top: 1696px;
-    
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    
-    line-height: 75px;
-    height: 350px;
-   width: 500px;
-   line-height: 60px;
-   font-size: 3.3rem;
-   font-weight: normal;
-    
-    color: #4564BF;
-    
+  .about-us-container .heading{
+    width: 90%;
   }
-  .aboutbtn{
-    position: absolute;
-    width: 295px;
-    height: 54px;
-    left: 868px;
-    top: 1979px;
-    color: aliceblue;
-    font-size: 28px;
-    
-    background: #FF697E;
-    box-shadow: 4px 6px 8px rgba(255, 105, 126, 0.49);
-    border: 2px solid #FF697E ;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .textaboutt{
-    top: 1810px;
-    left: 170px;
-    position: absolute;
-    font-family: Raleway;
-font-style: normal;
-font-weight: normal;
-font-size: 28px;
-line-height: 36px;
-
-color: #000000;
-width: 1527px;
-height: 136px;
-
-opacity: 0.8;
-     
-      
-  }
-
-  @media screen and (max-width: 400px){
-
-    .textAbout {
-      position: absolute;
-width: 322px;
-height: 44px;
-left: 47px;
-top: 796px;
-
-font-family: Raleway;
-font-style: normal;
-font-weight: normal;
-font-size: 30px;
-line-height: 35px;
-
-color: #4564BF;
-    }
-    .textaboutt{
-      width: 288px;
-height: 444px;
-left: 47px;
-top: 860px;
-
-font-family: Roboto Slab;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 26px;
-
-color: #000000;
-
-opacity: 0.8;
-        
-    }
-    .aboutbtn{
-      position: absolute;
-width: 288px;
-height: 53px;
-left: 47px;
-top: 1120px;
-
-background: #FF697E;
-box-shadow: 4px 6px 8px rgba(255, 105, 126, 0.49);
- border-radius: 5px;
-      cursor: pointer;
-    }
-
-  }
+}
