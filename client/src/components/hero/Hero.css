@@ -7,31 +7,59 @@
 }
 
 .hero-container {
-  position: relative;
-  top: -52px;
-  left: 0;
-}
-
-.bg {
-  max-width: 100%;
-  z-index: -10;
-}
-
-.hero-text {
-  position: relative;
-  top: -550px;
-  left: 170px;
-  color: #ff577e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 110vh;
+  background-image: url("./assets/background-large.png");
+  background-repeat: no-repeat;
+  background-color: #fcfcfc;
+  background-size: cover;
+  background-position: center center;
   font-family: "Raleway", sans-serif;
-  height: 300px;
-  width: 300px;
-  line-height: 60px;
-  font-size: 1.5rem;
+  height: 95vh;
+  transform: translate(0,-9vh);
+  max-height: 100vh;
+  width: 100%;
 }
 
-.head-logo {
-  position: relative;
-  top: -675px;
-  left: 100px;
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  width: 80%;
+  margin-top: 6rem;
+}
+
+.hero-content img{
   width: 250px;
+}
+
+.hero-text h1{
+  color: #ff697e;
+  font-size: 3.4rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width:820px) {
+  .hero-container{
+    background: url("./assets//background-mobile.png") no-repeat center center fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .head-logo{
+    display: none;
+  }
+  .hero-content{
+    margin-top: 18rem;
+  }
+  .hero-text h1{
+  color: #ff697e;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
 }

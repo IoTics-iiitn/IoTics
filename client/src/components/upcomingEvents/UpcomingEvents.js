@@ -1,6 +1,6 @@
 import React from 'react'
 import "./UpcomingEvents.css"
-import logooo from './assests/Asset 9.png'
+import logooo from './assets/Asset 9.png'
 const UpcomingEvents = () => {
     return (
         <div>

@@ -1,43 +1,57 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState, useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
 
 // importing the logo
-import image from './assets/logo.png'
+import logo from "./assets/logo.png";
 
-import "./Navbar.css"
+import "./Navbar.css";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { visibility } = props;
 
-    const [navbar, setNavbar] = useState(false)
+  const [navbar, setNavbar] = useState(false);
+  const [show, setShow] = useState(false);
+  const [isVisible, setIsVisible] = useState();
+  const menu = useRef(null)
 
-    const changeNavbar = () => {
-        if (window.scrollY >= 100) {
-            setNavbar(true)
-        }
-        else {
-            setNavbar(false)
-        }
-    }
-
-    window.addEventListener('scroll', changeNavbar)
-
-    return (
-        <div className={navbar ? 'nav-container scroll' : 'nav-container'}>
-            <img className={navbar ? 'logo scroll-logo' : 'logo'} src={image} alt="img" />
-            <div className="nav-text">
-                <NavLink exact to="/" className={isActive => "active" + (!isActive ? " unselected" : "")}>
-                    <div className="home">
-                        <h1>Home</h1>
-                    </div>
-                </NavLink>
-                <NavLink to="/about" className={isActive => "active" + (!isActive ? " unselected" : "")}>
-                    <div className="about">
-                        <h1>About Us</h1>
-                    </div>
-                </NavLink>
-            </div>
+  return (
+    <div
+      className={
+        visibility ? "navbar-container" : "navbar-container is-distinct"
+      }
+    >
+      <nav className="navbar">
+        <div className="nav-logo">
+          {visibility ? null : <img src={logo} alt="ioticsLogo" />}
         </div>
-    )
-}
+        <div
+          onClick={() => setShow((prevState) => !prevState)}
+          className={`${show ? "hamburger-btn open" : "hamburger-btn"}`}
+        >
+          <div className="hamburger"></div>
+        </div>
+        <div ref={menu} className={`${show ? "nav-menu hide" : "nav-menu"}`}>
+          <ul>
+            <NavLink
+              onClick={() => setShow((prevState) => !prevState)}
+              exact
+              activeClassName="is-active"
+              to="/"
+            >
+              <li>Home</li>
+            </NavLink>
+            <NavLink
+              onClick={() => setShow((prevState) => !prevState)}
+              activeClassName="is-active"
+              to="/team"
+            >
+              <li>Our Team</li>
+            </NavLink>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
