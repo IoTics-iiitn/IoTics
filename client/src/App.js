@@ -3,7 +3,7 @@ import Home from './pages/home/Home.js'
 import Navbar from './components/navbar/Navbar.js'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Team from "./pages/team/Team"
-import Hero from './components/hero/Hero.js';
+import Footer from './components/footer/Footer.js';
 
 export const VisibilityContext = React.createContext()
 
@@ -24,10 +24,10 @@ const App = () => {
               <Home />
             </Route>
             <Route exact path="/team">
-              {/* <Home></Home> */}
               <Team></Team>
             </Route>
           </Switch>
+          <Footer></Footer>
         </Router>
       </VisibilityContext.Provider>
     );

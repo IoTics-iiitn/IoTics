@@ -69,14 +69,12 @@ const Form = () => {
       setEmail("");
       setPhoneNumber("");
       setRollNumber("");
-
-      console.log("lol");
     }
   };
 
   return (
     <>
-      <div className="form-container">
+      <div id="form" className="form-container">
         <form onSubmit={handleSubmit}>
           <div className="form-heading">
             <h1>Join the Crew</h1>
@@ -86,9 +84,7 @@ const Form = () => {
               <FormField
                 inputType="text"
                 value={name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
+                onChange={(e) => setName(e.target.value)}
                 fieldName="Name"
                 title="Input your name"
               ></FormField>
@@ -111,7 +107,7 @@ const Form = () => {
               ></FormField>
               <FormField
                 inputType="text"
-                value={phoneNumber.toUpperCase()}
+                value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
                 fieldName="Phone No"
                 maxLength="10"

@@ -1,1 +1,252 @@
-/* test */
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 41vh;
+  background: #142965;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+  margin-top: 5rem;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  width: 72%;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo-image img {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #102257;
+  height: 20px;
+}
+
+.footer-copyright h3 {
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.vertical-line {
+  background: rgba(255, 255, 255, 0.5);
+  width: 1px;
+}
+
+.footer-quick-links {
+  width: 20%;
+}
+
+.footer-quick-links h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-quick-links ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  max-width: 150px;
+}
+
+.footer-quick-links a {
+  text-decoration: none;
+  color: #ffffff;
+  line-height: 1.6rem;
+  width: 50px;
+  max-width: 20px;
+}
+
+.quick-links > a > li {
+  width: 150px;
+}
+
+.footer-quick-links p {
+  margin-bottom: 0.5rem;
+}
+
+.follow h4 {
+  font-weight: lighter;
+}
+
+.follow-icons {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.follow-icons .icon {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.follow-icons .icon img {
+  width: 30px;
+}
+
+.footer-query {
+  width: 40%;
+}
+
+.footer-query h2 {
+  margin-bottom: 1rem;
+}
+
+.footer-query-content {
+  margin-left: 1rem;
+}
+
+.footer-query-content > div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 1rem;
+  min-width: 320px;
+}
+
+.footer-query-content > div:nth-child(2) {
+  margin-bottom: 0.8rem;
+}
+
+.footer-query-email input {
+  width: 237px;
+  padding: 2px 5px;
+  background: rgba(255, 255, 255, 0.2);
+  font-family: "Work Sans", sans-serif;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.footer-query-message textarea {
+  resize: none;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 5px;
+  font-family: "Work Sans", sans-serif;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  max-width: 237px;
+}
+
+.footer-submit-button {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 81%;
+}
+
+.footer-submit-button button {
+  background: #ffffff;
+  color: #142965;
+  padding: 3px 5px;
+  border: none;
+  font-weight: 600;
+  border-radius: 2px;
+  cursor: pointer;
+  min-width: 60px;
+}
+
+@media screen and (min-width: 1300px) {
+  .footer-query-content > div {
+    min-width: 400px;
+  }
+  .footer-query-email input {
+    width: 300px;
+  }
+  .footer-query-message textarea {
+    max-width: 300px;
+    width: 300px;
+    height: 7em;
+  }
+  .footer-submit-button {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .footer-container {
+    min-height: 42vh;
+  }
+  .footer-content {
+    width: 100%;
+  }
+  .footer-logo {
+    width: 20%;
+  }
+  .footer-query {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .footer-content {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  .vertical-line {
+    display: none;
+  }
+  .footer-content > div {
+    margin-bottom: 1.5rem;
+    width: 60%;
+  }
+  .footer-logo {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-content {
+    margin-left: 0;
+  }
+  .footer-content > div {
+    width: 100%;
+  }
+  .footer-query-content {
+    margin-left: 0rem;
+  }
+  .footer-query-content > div {
+    justify-content: space-between;
+  }
+  .footer-submit-button {
+    width: 100%;
+    padding-right: 0.5rem;
+  }
+  .footer-quick-links h2,
+  .footer-query h2 {
+    font-size: 1.3rem;
+  }
+}
