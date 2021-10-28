@@ -1,0 +1,130 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.carousel-container .header {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-family: "Work Sans", sans-serif;
+  color: #4564bf;
+}
+
+/* 
+core carousel css
+*/
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 950px;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.carousel .slick-slider {
+  max-width: 950px;
+}
+
+.carousel .slick-track {
+  display: flex;
+  align-items: stretch;
+}
+
+.carousel .slick-slide {
+  display: flex;
+  align-self: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .slick-slide > div {
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+customizing thumbs
+*/
+
+.carousel .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0, 10px);
+}
+
+.carousel .slick-dots ul {
+  display: flex;
+  width: 150px;
+}
+
+.carousel .slick-dots ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+}
+
+.carousel .slick-dots ul li button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(69, 100, 191, 0.46);
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+}
+
+.carousel .slick-dots ul li button::before {
+  content: "";
+  width: 0;
+  height: 0;
+}
+
+.carousel .slick-dots ul .slick-active button {
+  background: rgba(69, 100, 191, 0.81);
+  width: 11px;
+  height: 11px;
+}
+
+@media screen and (min-width: 600px) {
+  /* customizing thumbs for more than 600px */
+  .carousel .slick-dots ul {
+    display: flex;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .carousel {
+    width: 600px;
+  }
+  .carousel .slick-slider {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .carousel {
+    width: 260px;
+    height: 535px;
+  }
+  .carousel .slick-slider {
+    max-width: 260px;
+  }
+}

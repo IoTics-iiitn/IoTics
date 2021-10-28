@@ -8,7 +8,7 @@ import Form from "../../components/form/Form";
 
 const Home = () => {
   return (
-    <div>
+    <div id="home" >
       <Hero />
       <UpcomingEvents></UpcomingEvents>
       <AboutUs></AboutUs>

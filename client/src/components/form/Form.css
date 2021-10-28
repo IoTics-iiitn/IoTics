@@ -94,7 +94,7 @@ input[type="number"] {
   cursor: pointer;
 }
 
-input:focus {
+.form-container input:focus {
   outline: 1px solid #ff697e;
 }
 
