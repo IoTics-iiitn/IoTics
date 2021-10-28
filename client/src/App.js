@@ -12,7 +12,7 @@ const App = () => {
     const [visibility, setVisibility] = useState(false)
     const value = {visibility, setVisibility}
 
-    console.log(visibility)
+    // console.log(visibility)
     // console.log("check")
 
     return (
