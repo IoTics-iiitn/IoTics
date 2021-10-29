@@ -16,7 +16,7 @@
 .form-container form {
   display: flex;
   flex-direction: column;
-  width: 72%;
+  width: 60%;
   background: rgba(229, 229, 229, 0.52);
   padding: 1rem 2rem;
   border-radius: 8px;

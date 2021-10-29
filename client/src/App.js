@@ -23,7 +23,7 @@ const App = () => {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route exact path="/team">
+            <Route exact path="/ourTeam">
               <Team></Team>
             </Route>
           </Switch>

@@ -1,9 +1,8 @@
 import React from 'react'
 import "./TeamCard.css"
-import wingLead from "./wingLead.jpeg"
 import aditiYadav from "./aditiYadav-modified.png"
 
-import {ReactComponent as TeamCardSvgLarge} from "./assets/teamCard-large.svg"
+import teamCardPngLarge from "./assets/teamCard-large.png"
 import teamCardPng from "./assets/teamCard-mobile.png"
 import githubLogo from "../footer/assets/githubLogo.png";
 import instagramLogo from "../footer/assets/instagramLogo.png";
@@ -15,15 +14,15 @@ const TeamCard = (props) => {
 
     return (
       <div className="teamCard">
-        <div className="teamCardSvg-large">
-          <TeamCardSvgLarge></TeamCardSvgLarge>
+        <div className="teamCardPng-large">
+          <img src={teamCardPngLarge} alt="" />
         </div>
         <div className="teamCardPng-mobile">
-            <img src={teamCardPng} alt="teamCardPngMobile" />
+          <img src={teamCardPng} alt="teamCardPngMobile" />
         </div>
         <div className="teamCard-content">
           <div className="member-image">
-            <img src={memberImage} alt="" />
+            <img src={memberImage} alt={memberName} />
           </div>
           <div className="member-details">
             <div className="personal-details">
@@ -34,24 +33,26 @@ const TeamCard = (props) => {
             <div className="social-details">
               <div className="follow-icons">
                 <div className="icon">
-                  <a
-                    target="_blank"
-                    href={memberInstagramLink}
-                  >
-                    <img src={instagramLogo} alt="instagramLogo" />
+                  <a target="_blank" href={memberInstagramLink}>
+                    <img
+                      title="instagram"
+                      src={instagramLogo}
+                      alt="instagramLogo"
+                    />
                   </a>
                 </div>
                 <div className="icon">
-                  <a
-                    target="_blank"
-                    href={memberLinkedinLink}
-                  >
-                    <img src={linkedinLogo} alt="linkedinLogo" />
+                  <a target="_blank" href={memberLinkedinLink}>
+                    <img
+                      title="linkedin"
+                      src={linkedinLogo}
+                      alt="linkedinLogo"
+                    />
                   </a>
                 </div>
                 <div className="icon">
                   <a target="_blank" href={memberGithubLink}>
-                    <img src={githubLogo} alt="githubLogo" />
+                    <img title="github" src={githubLogo} alt="githubLogo" />
                   </a>
                 </div>
               </div>

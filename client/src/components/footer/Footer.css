@@ -212,7 +212,6 @@
 
 @media screen and (max-width: 780px) {
   .footer-content {
-    /* flex-direction: column; */
     flex-wrap: wrap;
     margin-left: 1rem;
   }
@@ -226,6 +225,7 @@
   .footer-logo {
     flex-direction: row;
     justify-content: flex-start;
+    transform: translate(0,1rem);
   }
 }
 
