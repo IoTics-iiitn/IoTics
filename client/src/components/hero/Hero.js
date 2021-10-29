@@ -1,10 +1,10 @@
-import React, {useState, useEffect, useRef, useContext} from 'react'
+import React, {useEffect, useRef, useContext} from 'react'
 
 import logo from './assets/logo.png'
-import {ReactComponent as BgSvg} from "./assets/background-large.svg"
 
 import "./Hero.css"
 import { VisibilityContext } from "../../App";
+import { Spring, animated } from "react-spring";
 
 
 const Hero = (props) => {
@@ -13,12 +13,10 @@ const Hero = (props) => {
     const logoRef = useRef(null)
     const { visibility, setVisibility } = useContext(VisibilityContext);
 
-
     const callback = (entries)=>{
         const [entry] = entries
         setVisibility(entry.isIntersecting)
     }
-
 
     let options = {
         root: null,
@@ -37,16 +35,40 @@ const Hero = (props) => {
     }, [options, logoRef])
 
     return (
-        <div className="hero-container">
-          <div className="hero-content">
-            <img ref={logoRef} className="head-logo" src={logo} alt="logo" />
-            <div className="hero-text">
-              <h1>
-                Streamlining <br /> Your IOT <br /> Needs...
-              </h1>
-            </div>
-          </div>
+      <div className="hero-container">
+        <div className="hero-content">
+          <Spring
+            from={{ opacity: 0, transform: "rotateZ(500deg) scale(0)" }}
+            to={{ opacity: 1, transform: "rotateZ(0deg) sclae(1)" }}
+          >
+            {(styles) => (
+              <animated.div style={styles}>
+                <img
+                  ref={logoRef}
+                  className="head-logo"
+                  src={logo}
+                  alt="logo"
+                />
+              </animated.div>
+            )}
+          </Spring>
+          <Spring
+            from={{ opacity: 0, transform: "translate(0,-5rem)" }}
+            to={{ opacity: 1, transform: "translate(0,0rem)" }}
+            delay={500}
+          >
+            {(styles) => (
+              <animated.div style={styles}>
+                <div className="hero-text">
+                  <h1>
+                    Streamlining <br /> Your IOT <br /> Needs...
+                  </h1>
+                </div>
+              </animated.div>
+            )}
+          </Spring>
         </div>
+      </div>
     );
 }
 

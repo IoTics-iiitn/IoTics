@@ -23,6 +23,12 @@
   width: 100%;
 }
 
+@-moz-document url-prefix() {
+  .hero-container{
+    transform: translate(0,-10vh);
+  }
+}
+
 .hero-content{
   display: flex;
   flex-direction: column;
@@ -30,6 +36,10 @@
   height: 400px;
   width: 80%;
   margin-top: 8rem;
+}
+
+.hero-content > div:nth-child(1){
+  max-width: 250px;
 }
 
 .hero-content img{
@@ -42,11 +52,12 @@
   font-weight: 400;
 }
 
+
 @media screen and (max-width:820px) {
   .hero-container{
-    background: url("./assets//background-mobile.png") no-repeat center center fixed;
+    background: url("./assets/background-mobile.png");
     background-size: cover;
-    background-position: center center;
+    background-position: center center ;
   }
 }
 
@@ -55,7 +66,7 @@
     display: none;
   }
   .hero-content{
-    margin-top: 18rem;
+    margin-top: 0rem;
   }
   .hero-text h1{
   color: #ff697e;

@@ -10,11 +10,11 @@ const Team = () => {
   // console.log("lol")
 
   return (
-    <div className="teams-page">
+    <div id="ourTeam" className="teams-page">
       <div className="teams-page-bg">
         <img src={teamsHeroBg} alt="" />
       </div>
-      <div className="section-content">
+      <div id="team" data-aos="zoom-in-up" className="section-content">
         <section>
           <h1>IoTics - Who are we ?</h1>
           <p>

@@ -25,7 +25,10 @@ const Form = () => {
     if (
       rollNumber.trim().length === 10 &&
       phoneNumber.trim().length === 10 &&
-      /^\d+$/.test(phoneNumber)
+      /^\d+$/.test(phoneNumber) &&
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(
+        email
+      )
     ) {
       return true;
     }
@@ -99,7 +102,7 @@ const Form = () => {
                 // pattern=".{10,10}"
               ></FormField>
               <FormField
-                inputType="email"
+                // inputType="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 fieldName="E-mail"
@@ -125,12 +128,20 @@ const Form = () => {
               type="submit"
               style={
                 submitted
-                  ? { background: "#ffffff", color: "#ff697e", cursor:"not-allowed" }
+                  ? {
+                      background: "#ffffff",
+                      color: "#ff697e",
+                      cursor: "not-allowed",
+                    }
                   : { background: "#ff697e", color: "#fffff" }
               }
-              onClick={() => console.log(name, rollNumber, phoneNumber, email)}
-              disabled = {submitted ? true : false}
-              title={submitted ? "Thanks ! You have submitted the form successfully !" : null}
+              // onClick={() => console.log(name, rollNumber, phoneNumber, email)}
+              disabled={submitted ? true : false}
+              title={
+                submitted
+                  ? "Thanks ! You have submitted the form successfully !"
+                  : null
+              }
             >
               {loader ? (
                 <PulseLoader color="#fff" size={10}></PulseLoader>

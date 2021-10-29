@@ -1,7 +1,7 @@
 import React from 'react'
 import "./UpcomingEvents.css"
 import upcomingRobotImage from "./assets/upcomingRobotImage.png";
-import upcomingTestImage from "./assets/upcomingTestImage1.jpg";
+
 const UpcomingEvents = () => {
     return (
       <div className="upcoming-events-container">

@@ -30,6 +30,7 @@ core carousel css
   width: 950px;
   overflow: hidden;
   padding-bottom: 1rem;
+  height: 359px;
 }
 
 .carousel .slick-slider {
@@ -113,6 +114,7 @@ customizing thumbs
 @media screen and (max-width: 950px) {
   .carousel {
     width: 600px;
+    height: 250px;
   }
   .carousel .slick-slider {
     max-width: 600px;
@@ -127,4 +129,7 @@ customizing thumbs
   .carousel .slick-slider {
     max-width: 260px;
   }
+  .header h1 {
+  font-size: 1.6rem;
+}
 }

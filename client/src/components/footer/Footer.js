@@ -7,6 +7,7 @@ import githubLogo from "./assets/githubLogo.png";
 import linkedinLogo from "./assets/linkedinLogo.png";
 import db from "../form/firebase";
 import { PulseLoader } from "react-spinners";
+import { NavHashLink } from "react-router-hash-link";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -63,7 +64,7 @@ const Footer = () => {
               <h2>Quick Links:</h2>
             </div>
             <ul className="quick-links">
-              <HashLink smooth to="/#home">
+              <HashLink smooth to="/#">
                 <li>Home</li>
               </HashLink>
               <HashLink
@@ -73,7 +74,7 @@ const Footer = () => {
               >
                 <li>Registration Form</li>
               </HashLink>
-              <HashLink smooth to="/team#">
+              <HashLink smooth to="/ourTeam#">
                 <li>Our Team</li>
               </HashLink>
             </ul>

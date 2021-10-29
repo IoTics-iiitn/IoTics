@@ -11,14 +11,14 @@
   font-family: "Work Sans", sans-serif;
 }
 
-.teamCard svg {
+.teamCardPng-large img{
   width: 80%;
   max-height: 300px;
   min-width: 950px;
   max-width: 950px;
 }
 
-.teamCardSvg-large,
+.teamCardPng-large,
 .teamCardPng-mobile {
   display: flex;
   justify-content: center;
@@ -43,11 +43,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 230px;
-  height: 230px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   overflow: hidden;
-  margin-right: 4rem;
+  margin-right: 1.5rem;
 }
 
 .member-image img {
@@ -91,8 +91,14 @@
   background: #4564bf;
 }
 
+@media screen and (min-width:900px) {
+    .member-image{
+      transform: translate(-40px,0) scale(0.97);
+    }
+}
+
 @media screen and (max-width: 950px) {
-  .teamCard svg {
+  .teamCardPng-large img {
     min-width: 600px;
     height: 500px;
     min-height: 200px;
@@ -102,10 +108,10 @@
     width: 600px;
   }
   .member-image {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     overflow: hidden;
-    margin-right: 2rem;
+    transform: translate(-15px,2px);
   }
   .member-details {
     height: 100px;
@@ -134,8 +140,9 @@
 @media screen and (max-width: 610px) {
   .teamCard {
     max-height: none;
+    min-height: 208px;
   }
-  .teamCardSvg-large {
+  .teamCardPng-large {
     display: none;
   }
   .teamCardPng-mobile {
@@ -153,10 +160,11 @@
     transform: translate(0, -2.5rem);
   }
   .member-image {
-    margin-right: 0rem;
+    margin-right: -1.5rem;
     margin-bottom: 4rem;
     width: 190px;
     min-height: 190px;
+    max-height: 190px;
   }
   .member-details {
     width: 70%;
