@@ -44,7 +44,6 @@ const Navbar = (props) => {
                 onClick={() => setShow((prevState) => !prevState)}
                 activeClassName="is-active"
                 to="/ourTeam"
-                smooth
               >
                 <li>Our Team</li>
               </NavLink>

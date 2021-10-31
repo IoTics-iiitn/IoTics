@@ -102,7 +102,7 @@ const Form = () => {
                 // pattern=".{10,10}"
               ></FormField>
               <FormField
-                // inputType="email"
+                inputType="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 fieldName="E-mail"
