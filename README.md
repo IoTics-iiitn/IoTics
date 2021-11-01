@@ -9,8 +9,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-   <a href="https://github.com/IoTics-iiitn/IoTics">
-    <img src="https://raw.githubusercontent.com/bhavesh-chaudhari/Learning-Material/main/iotics-logo.jpg?token=AR4AVBCJKFQOGZO4HMMYKT3BNRRAO" alt="Logo" width="100" height="100">
+   <a href="https://raw.githubusercontent.com/bhavesh-chaudhari/Healthify/main/images/iotics-logo%20(2).jpg" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">IoTics</h3>
@@ -33,7 +32,7 @@ This is a github repository for the official website of IoTics - The IoT and Rob
 - [`Contributing`](https://github.com/IoTics-iiitn/IoTics/blob/main/CONTRIBUTING.md)
 - [`License`](https://github.com/IoTics-iiitn/IoTics/blob/main/LICENSE)
 
-### Built With - 
+### Built With 
 - React Js
 
 
