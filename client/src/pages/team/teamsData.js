@@ -211,6 +211,16 @@ export default [
     webdevTeam: [
       {
         id: 17,
+        memberImage: bhaveshChaudhariImage,
+        memberName: "Bhavesh Chaudhari",
+        memberCollegeYear: "2nd yr, CSE",
+        memberInstagramLink: "https://www.instagram.com/bhaveshc0/?hl=en",
+        memberGithubLink: "https://github.com/bhavesh-chaudhari",
+        memberLinkedinLink:
+          "https://www.linkedin.com/in/bhavesh-chaudhari-bb4966208/",
+      },
+      {
+        id: 18,
         memberImage: yashMishraImage,
         memberName: "Yash Mishra",
         memberCollegeYear: "2nd yr, CSE",
@@ -220,7 +230,7 @@ export default [
           "https://www.linkedin.com/in/yash-mishra-649090216/",
       },
       {
-        id: 18,
+        id: 19,
         memberImage: prateekNiketImage,
         memberName: "Prateek Niket",
         memberCollegeYear: "2nd yr, CSE",
@@ -229,7 +239,7 @@ export default [
         memberLinkedinLink: "https://www.linkedin.com/in/prateekniket/",
       },
       {
-        id: 19,
+        id: 20,
         memberImage: devanshuGuptaImage,
         memberName: "Devanshu Gupta",
         memberCollegeYear: "2nd yr, CSE",
@@ -239,7 +249,7 @@ export default [
           "https://www.linkedin.com/in/devanshu-gupta-574098202/",
       },
       {
-        id: 20,
+        id: 21,
         memberImage: arkoGhoshImage,
         memberName: "Arko Ghosh",
         memberCollegeYear: "2nd yr, CSE",
@@ -247,16 +257,6 @@ export default [
         memberGithubLink: "https://github.com/arkoghoshdastidar",
         memberLinkedinLink:
           "https://www.linkedin.com/in/arko-ghosh-dastidar-93a792202/",
-      },
-      {
-        id: 21,
-        memberImage: bhaveshChaudhariImage,
-        memberName: "Bhavesh Chaudhari",
-        memberCollegeYear: "2nd yr, CSE",
-        memberInstagramLink: "https://www.instagram.com/bhaveshc0/?hl=en",
-        memberGithubLink: "https://github.com/bhavesh-chaudhari",
-        memberLinkedinLink:
-          "https://www.linkedin.com/in/bhavesh-chaudhari-bb4966208/",
       },
     ],
   },

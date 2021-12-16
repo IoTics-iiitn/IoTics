@@ -1,0 +1,53 @@
+.project-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.projects .heading {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  margin-bottom: 2rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.projects .heading h1 {
+  color: #4564bf;
+}
+
+.project-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.project-video iframe{
+    border-radius: 10px;
+     box-shadow: 0px 0px 1px 2px #ff697e;
+}
+
+@media screen and (max-width: 1100px) {
+  .project-video {
+    width: 100%;
+  }
+  .project-video-container .heading {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .projects {
+    width: 90%;
+  }
+}

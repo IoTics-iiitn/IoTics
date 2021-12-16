@@ -9,8 +9,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-   <a href="https://raw.githubusercontent.com/bhavesh-chaudhari/Healthify/main/images/iotics-logo%20(2).jpg" alt="Logo" width="100" height="100">
-  </a>
+   <img href="https://raw.githubusercontent.com/bhavesh-chaudhari/Healthify/main/images/iotics-logo%20(2).jpg" alt="Logo" width="100" height="100">
+  </img>
 
   <h3 align="center">IoTics</h3>
 
