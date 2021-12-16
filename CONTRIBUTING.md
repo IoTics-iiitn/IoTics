@@ -4,7 +4,7 @@ If you have a suggestion that would make this project better, please create a pu
 Don't forget to give the project a star! Thanks again!
 
 ## Getting Started
-- [Internal Contributors](#internal-contributors) - Tantra Fiesta Core Web Development Team
+- [Internal Contributors](#internal-contributors) - Iotics Core Web Development Team
 - [External Contributors](#external-contributors) - (Students, Willing Contributors)
 
 ## Internal Contributors
